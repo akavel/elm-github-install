@@ -101,6 +101,9 @@ The source can be defined as:
   ```
   "elm-lang/dom": "../elm-lang/dom"
   ```
+  *Note:* on Windows this doesn't work if npm was used to install elm-install; you
+  must use Ruby & gem install (see #36 for more details). Also, cmd.exe must be run
+  as Administrator, as this commands creates a symbolic link to a directory.
 
 If a reference or a path is defined then the version in the `dependencies` field is
 ignored and the **version will be used from the `elm-package.json` at that source**.
